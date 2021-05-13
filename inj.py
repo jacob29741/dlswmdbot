@@ -10,7 +10,7 @@ import time
 import asyncio
 
 client = discord.Client()
-token = 'ODQyMjI5NTcxMDg3ODkyNTEy.YJyRaQ.zO6eTq6lXaeo7htudBl18KiXncw'
+token = 'ODQyMjI5NTcxMDg3ODkyNTEy.YJyRaQ.OMEVoViAYKxxege9fNS6j5agDmo'
 gaming = '!인증 받는중'
 channel = '842230759682736128'
 

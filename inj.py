@@ -3,14 +3,14 @@
 #pip install captcha
 #pip install asyncio
 
-import discord
+import discordt
+import os
 from captcha.image import ImageCaptcha
 import random
 import time
 import asyncio
 
 client = discord.Client()
-token = 'ODQyMjI5NTcxMDg3ODkyNTEy.YJyRaQ.OMEVoViAYKxxege9fNS6j5agDmo'
 gaming = '!인증 받는중'
 channel = '842230759682736128'
 
@@ -67,7 +67,8 @@ async def on_message(message):
             tlfvoEmbed.add_field(name='이유', value='잘못된 숫자', inline=False)
             await message.channel.send(embed=tlfvoEmbed)
             print('f {message.author} 님이 잘못된 숫자로 인해 인증을 실패함.')
-
-client.run(token)
+            
+access_token = os.environ["BOT_TOKEN"]
+client.run(access_token)
 
 
